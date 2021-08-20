@@ -1,6 +1,6 @@
 module "network" {
-  source  = "craftya/network/azurerm"
+  source  = "app.terraform.io/craftya/network/azurerm"
   version = "3.0.1"
   # insert required variables here
-  resource_group_name = azurerm_resource_group.myresourcegroup
+  resource_group_name = azurerm_resource_group.myresourcegroup.name
 }
